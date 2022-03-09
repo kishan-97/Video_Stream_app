@@ -37,4 +37,4 @@ socket.on('join-room',(roomId,userId)=>{
 
 
 })
-server.listen(3000);
+server.listen(process.env.PORT);
