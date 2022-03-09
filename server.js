@@ -6,7 +6,7 @@ const {v4 : uuidV4}=require('uuid');
 
 const {PeerServer}=require('peer');
 
-const PS = PeerServer({ port: 3001, path: '/' });
+const PS = PeerServer({ port: 3001, path: 'rcall9.herokuapp.com' });
 
 app.set('view engine','ejs');
 
@@ -37,4 +37,4 @@ socket.on('join-room',(roomId,userId)=>{
 
 
 })
-server.listen(process.env.PORT);
+server.listen(process.env.PORT || 3000);
