@@ -6,7 +6,7 @@ const {v4 : uuidV4}=require('uuid');
 
 const {PeerServer}=require('peer');
 
-const PS = PeerServer({ port: 3001, path: 'rcall9.herokuapp.com' });
+const PS = PeerServer({ port: 3001, path: '/' });
 
 app.set('view engine','ejs');
 
